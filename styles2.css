@@ -14,15 +14,17 @@ body{
 /*-------
 FONTS
 --------*/
-.social-links-wrapper p{
+.social-links-wrapper, .follow{
   font-family: 'Caveat', cursive;
   font-size: 2rem;
 }
-.chef-quote-wrapper p{
+.chef-quote{
   font-family: 'Caveat', cursive;
   font-size: 1rem;
 }
-
+.main-nav-links{
+  font-size: 2rem;
+}
 /*------
 GRID
 ------*/
@@ -33,15 +35,6 @@ GRID
   min-height: 100vh;
 }
 
-.grid-item-1{
-  background-color: aqua;
-}
-.grid-item-2{
-  background-color: bisque;
-}
-.grid-item-3{
-  background-color: coral;
-}
 /*--------------
 
 HEADER
@@ -112,22 +105,12 @@ FOOD CONTAINER GRID
   grid-template-rows: auto;
   justify-content: center;
 }
-  .food-grid-item{
-padding: 0;
-/* margin: 0 1rem; */
-height: auto;
-width: 100%;
+.food-grid-item{
+  padding: 0;
+  /* margin: 0 1rem; */
+  height: auto;
+  width: 100%;
 }
-.food-grid-item-1{
-  background-color: lightseagreen;
-}
-.food-grid-item-2{
-  background-color: magenta;
-}
-.food-grid-item-3{
-  background-color: navy;
-}
-
 
 /*---
 FOOD IMAGES
@@ -149,15 +132,29 @@ FOOD IMAGES
 FOOTER
 
 ----------------*/
+/*---
+FOOTER GRID
+---*/
 
 footer{
-  display: flex;
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
+  background-color: #A68E30;
 }
+
+
+
+
+
+
 /*---
 Chef Image
 ---*/
 .chef-container{
   display: flex;
+  color: black;
+  background-color: #A68E30;
 }
 
 .chef-image-wrapper{
@@ -168,33 +165,73 @@ Chef Image
 
 .chef-image{
   height: auto;
-  width: 170px;
+  width: 200px;
   padding: 0;
 }
 /*---
 Chef Quote
 ---*/
 .chef-quote-wrapper{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+width: 100%;
+padding: .5rem;
 }
 .chef-quote{
-  background-color: #A68E30;
+  background-color: black;
   border-radius: 10px;
-  padding: .5rem;
+  padding:.5rem;
+margin: 3rem auto;
+color: white;
 }
 
 /*---
 Social Links
 ---*/
-.social-container{
+
+.social-container-wrapper{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.social-container{
+  display: flex;
+
 }
 
 .social-links{
   display: flex;
   list-style: none;
 }
+.follow-wrapper{
+margin-right: 5px;
+}
+
+.social-link{
+  margin: 0 10px;
+  padding: 5px;
+}
+
+/*---
+ABOUT SECTION
+---*/
+.about-container{
+  width: 100%;
+  background-color: #A68E30;
+  color: black;
+}
+
+.about-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  align-items: center;
+  width: 100%;
+  line-height: 2rem;
+}
+
+
+
+
