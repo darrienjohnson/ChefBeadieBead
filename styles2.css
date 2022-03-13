@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: rgba(0, 0, 0, .97);
+  background-color: rgba(0, 0, 0, 0.973);
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
   min-height: 100vh;
@@ -71,6 +71,18 @@ NAV
   text-decoration: none;
   color: inherit;
 }
+
+.main-nav-links a:hover{
+  color: #adadad;
+}
+
+#contact-link{
+  color: #A68E30;
+}
+#contact-link:hover {
+  color: #7e6c23;
+}
+
 .nav-link{
   padding: 0 1rem;
 }
@@ -138,9 +150,7 @@ FOOTER GRID
 
 footer{
   display: grid;
-  /* justify-content: space-between; */
   grid-template-columns: repeat(auto-fit, minmax(417px, 1fr));
-  background-color: #A68E30;
 }
 
 
@@ -153,8 +163,11 @@ Chef Image
 ---*/
 .chef-container{
   display: flex;
-  color: black;
-  background-color: #A68E30;
+  background-color: rgba(0, 0, 0, 0.973);
+  background-color:#A68E30;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .chef-image-wrapper{
@@ -172,11 +185,11 @@ Chef Image
 Chef Quote
 ---*/
 .chef-quote-wrapper{
-width: 100%;
+width: 80%;
 padding: .5rem;
 }
 .chef-quote{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.815);
   border-radius: 10px;
   padding:.5rem;
 margin: 3rem auto;
@@ -209,7 +222,6 @@ margin-right: 5px;
 }
 
 .social-link{
-  margin: 0 10px;
   padding: 5px;
 }
 
@@ -218,18 +230,23 @@ ABOUT SECTION
 ---*/
 .about-container{
   width: 100%;
+  height: auto;
+  color: white;
   background-color: #A68E30;
-  color: black;
 }
 
 .about-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
   align-items: center;
-  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  width: 80%;
   line-height: 2rem;
+  background-color:rgba(0, 0, 0, 0.815);
+  margin: 0 auto;
+  margin-top: 1.5rem;
 }
 
 
