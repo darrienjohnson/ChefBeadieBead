@@ -9,7 +9,13 @@ body{
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
   min-height: 100vh;
+background-color: #3b3b3b;
+opacity: 1;
+background-image: radial-gradient(circle at center center, #000000, #3b3b3b), repeating-radial-gradient(circle at center center, #000000, #000000, 40px, transparent 80px, transparent 40px);
+background-blend-mode: multiply;
 }
+
+
 
 /*-------
 FONTS
