@@ -299,5 +299,17 @@ HAMBURGER BUTTON
     padding: 1rem;
   }
 
-
+  .food-grid-container{
+  /* max-width: 1000px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  grid-template-rows: auto;
+  justify-content: center;
+  }
+  .food-grid-item{
+  padding: 0;
+  /* margin: 0 1rem; */
+  height: auto;
+  width: 100%;
+  }
 }
