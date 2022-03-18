@@ -125,7 +125,7 @@ FOOD CONTAINER GRID
 .food-grid-container{
   /* max-width: 1000px; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 275px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
   grid-template-rows: auto;
   justify-content: center;
 }
